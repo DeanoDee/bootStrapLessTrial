@@ -13,11 +13,6 @@ h1 {
 .container {
   margin-bottom: 32px;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 .container {
   width: 100%;
   padding-right: 8px;

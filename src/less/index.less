@@ -1,51 +1,14 @@
 // some bullshit to demo
 
-.row > div{
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86,61,124,.15);
-    border: 1px solid rgba(86,61,124,.2);
-}
-.row+.row {
-margin-top: 1rem;
-}
+@import "./demoSiteClasses";
 
-h1 {
-    margin-top: 32px;
-}
-
-.container {
-    margin-bottom: 32px;
-}
-
-
-// Reset
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box; // 1
-}
+// The required reset
+@import "./reset";
 
 // Grid Variables
 
-@enable-grid-classes:       true;
+@import "./variables";
 
-@grid-breakpoints:
-	xs 0,
-	sm 576px,
-	md 768px,
-	lg 992px,
-	xl 1200px;
-    
-@container-max-widths:
-	sm 540px,
-	md 720px,
-	lg 960px,
-	xl 1140px;
-    
-@grid-columns:                12;
-@grid-gutter-width:           16px;
-
+//bootstrap grid requirements 
 @import "../../node_modules/bootstrap-less-port/less/_mixins";
 @import "../../node_modules/bootstrap-less-port/less/_grid";
